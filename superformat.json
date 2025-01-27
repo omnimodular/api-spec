@@ -87,17 +87,7 @@
           "$ref": "#/definitions/restricted-string"
         },
         "value": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            }
-          ]
+          "type": "number"
         }
       }
     },
