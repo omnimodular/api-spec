@@ -72,9 +72,6 @@ The `site` and `id` fields must conform to the following rules:
 - Must be from 1 through 50 characters long.
 - The name has been limited to give some headroom for pre- and post fixes, up to 13 characters.
 
-Note that the field itself can be shorter than the minimum of 3 characters so be sure to validate or prefix with a sufficiently long prefix. 
-2 characters should be enough, e.g., `d-`.
-
 Reference: https://docs.microsoft.com/en-us/rest/api/storageservices/naming-queues-and-metadata#queue-names
 
 ## Name-value pairs
