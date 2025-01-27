@@ -80,7 +80,7 @@ The name-value pairs conform to the following format.
 
 * Values can be null or omitted.
 
-* For metrics: value is a float or a list of floats.
+* For metrics: value is a float or a severity level.
 
 * For other top-level fields, value is a string or a list of strings.
   - This imples that numbers and dates should be converted to strings.
