@@ -69,7 +69,7 @@ The `site` and `id` fields must conform to the following rules:
 - The first and last letters must be alphanumeric.
 - All letters must be lowercase.
 - The dash (-) character cannot be the first or last character. Consecutive dash characters are not permitted.
-- Must be from <strike>3</strike> 1 through <strike>63</strike> 50 characters long.
+- Must be from 1 through 50 characters long.
 - The name has been limited to give some headroom for pre- and post fixes, up to 13 characters.
 
 Note that the field itself can be shorter than the minimum of 3 characters so be sure to validate or prefix with a sufficiently long prefix. 
