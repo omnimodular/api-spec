@@ -4,6 +4,15 @@
   "title": "Superformat",
   "type": "object",
   "definitions": {
+    "document-kind": {
+      "type": "string",
+      "enum": [
+        "invoice",
+        "purchase-order",
+        "delivery-receipt",
+        "match-report"
+      ]
+    },
     "normal-string": {
       "type": "string",
       "minLength": 1,
@@ -154,19 +163,32 @@
       ]
     },
     "kind": {
-      "type": "string",
-      "enum": [
-        "invoice",
-        "purchase-order",
-        "delivery-receipt",
-        "match-report"
-      ]
+      "$ref": "#/definitions/document-kind"
     },
     "site": {
       "$ref": "#/definitions/restricted-string"
     },
     "stage": {
       "$ref": "#/definitions/restricted-string"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/definitions/restricted-string"
+          },
+          "kind": {
+            "$ref": "#/definitions/document-kind"
+          }
+        }
+      }
     },
     "headers": {
       "$ref": "#/definitions/name-value-array"
