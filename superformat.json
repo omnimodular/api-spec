@@ -203,7 +203,8 @@
             "$ref": "#/definitions/name-value-object"
           },
           {
-            "$ref": "#/definitions/name-value-array"
+            "$ref": "#/definitions/name-value-array",
+            "deprecated": true
           }
         ],
       }
