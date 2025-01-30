@@ -150,10 +150,8 @@
     },
     "version": {
       "type": "string",
-      "const": "v3",
-      "examples": [
-        "v3"
-      ]
+      "enum": ["v2", "v3"],
+      "examples": ["v2", "v3"]
     },
     "kind": {
       "$ref": "#/definitions/document-kind"
