@@ -132,7 +132,6 @@
   },
   "required": [
     "version",
-    "kind",
     "site",
     "id",
     "stage"
