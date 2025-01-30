@@ -193,7 +193,14 @@
       "type": "array",
       "maxItems": 1000,
       "items": {
-        "$ref": "#/definitions/name-value-object"
+        "oneOf": [
+          {
+            "$ref": "#/definitions/name-value-object"
+          },
+          {
+            "$ref": "#/definitions/name-value-array"
+          }
+        ],
       }
     },
     "flow": {
