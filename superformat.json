@@ -136,7 +136,6 @@
     }
   },
   "required": [
-    "version",
     "site",
     "id",
     "stage"
