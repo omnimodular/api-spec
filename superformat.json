@@ -125,7 +125,7 @@
         "value": {
           "type": "string",
           "enum": [
-            "no_severity",
+            "no-severity",
             "info",
             "low",
             "medium",
