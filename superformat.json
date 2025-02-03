@@ -140,6 +140,7 @@
     "id",
     "stage"
   ],
+  "additionalProperties": false,
   "properties": {
     "id": {
       "$ref": "#/definitions/restricted-string",
